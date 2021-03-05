@@ -1,2 +1,1 @@
-asp-net
- ilk proje
+asp.net 'e giriş

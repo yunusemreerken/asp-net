@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RST.master.cs" Inherits="RandomSelectTool.RST1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charsetw=utf-8"/>
+    <title>Random Select Tool</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+     
+    <link href="css/tablet.css" rel="stylesheet"  media='(max-width: 768px)' />
+    <link href="css/mobile.css" rel="stylesheet"  media='(max-width: 500px)' />
+</head>
+<body>
+ <%--   <header id="home" class="bg-color">
+        <nav>
+
+            <h1 class="heading-big">Yunus Emre ERKEN</h1>
+            <ul>
+                <li><a href="#home" class="btn btn-primary"><i class="fas fa-home"></i> Ana Sayfa</a></li>
+                <li><a href="#portfolyo" class="btn btn-primary"><i class="fas fa-briefcase"></i>Portfolyo</a></li>
+                <li><a href="#iletisim" class="btn btn-primary"><i class="far fa-comments"></i>İletişim</a></li>
+            </ul>
+        </nav>
+    </header>--%>
+
+    
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+    <%-- <footer id="iletisim">
+        <div class="iletisim">
+            <div class="form">
+                <form>
+                    <h4 class="heading-medium">Bana Ulaşın</h4>
+
+                </form>
+            </div>
+            <div class="sosyalag">
+
+            </div>
+        </div>
+    </footer>--%>
+        
+</body>
+</html>

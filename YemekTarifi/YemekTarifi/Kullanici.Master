@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanici.master.cs" Inherits="YemekTarifi.Kullanici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="Kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 45px;
+        }
+
+        .auto-style3 {
+            font-weight: bold;
+            text-align: center;
+            background-color: #e5a9a9;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 150px; width: 700px; margin-left: 300px; background-color: #ce7171;">
+            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/resim/banner/head1.jfif" Width="700px" />
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
+        <div style="margin-left: 300px; width: 700px; height: 40px; background-color: #fff;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style3"><a href="AnaSayfa.aspx">ANA SAYFA</a></td>
+                        <td class="auto-style3"><a href="GununYemegi.aspx">GÜNÜN YEMEĞİ</a></td>
+                        <td class="auto-style3"><a href="TarifOner.aspx">TARİF ÖNER</a></td>
+                        <td class="auto-style3"><a href="Hakkimizda.aspx">HAKKIMIZDA</a></td>
+                        <td class="auto-style3"><a href="Iletisim.aspx">İLETİŞİM</a></td>
+                    </tr>
+                </table>
+
+            </asp:ContentPlaceHolder>
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
+        <div style="margin-left: 300px; width: 700px; height: 400px;">
+            <div style="float: left; width: 200px; height: auto; background-color: #ce7171;">
+                <h4>KATEGORİLER</h4>
+                <h4>
+                    <asp:DataList ID="DataList1" runat="server" OnSelectedIndexChanged="DataList1_SelectedIndexChanged1" Width="200px">
+                        <ItemTemplate>
+                            <div style="border: thin solid #CCCCCC">
+                                <a href="KategoriDetay.aspx?Kategori_Id=<%#Eval("Kategori_Id")%>"><asp:Label ID="Label2" runat="server" Text='<%# Eval("Kategori_Ad") %>'></asp:Label></a>  
+                                &nbsp;(
+                                <asp:Label ID="Label3" runat="server" Text='<%# Eval("Kategori_Adet") %>'></asp:Label>
+                                )
+                            </div>
+                        </ItemTemplate>
+                    </asp:DataList>
+                </h4>
+            </div>
+            <div style="margin-left: 250px; width: 450px; height: auto; background-color: #ce7171;">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+
+#home nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    
+    max-width: 1100px;
+}
+
+#home nav ul {
+   display: flex;
+   list-style-type:none;
+}
+#random-form {
+    display: flex;
+    flex-direction:column;
+    background-color:white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 10vh  25vw;
+    background-color: #2f3033;
+    border: 1px solid #2f3033;
+    border-radius: 4px;
+}
+
+#random-form .head1 {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: white;
+   
+}
+#random-form .list {
+    color: white;
+    
+}

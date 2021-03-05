@@ -1,0 +1,90 @@
+/* font-size */
+ 
+.heading-small {
+    font-size: 1rem;
+}
+
+.heading-medium {
+    font-size: 1.5rem;
+}
+
+.heading-big {
+    font-size: 1.75rem;
+}
+/* background */
+.bg-color {
+    background-color: chocolate;
+
+}
+/* font weight*/
+
+.heading-weight {
+    font-weight: 900;
+}
+
+/* text center */
+
+.text-center {
+    align-items: center;
+}
+.italic {
+    font-style: italic;
+}
+/* buttons */
+.btn {
+    margin: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;;
+    ;
+}
+.btn-primary {
+    color:white;
+    background-color: chocolate;
+    border:1px solid chocolate;
+}
+.btn-primary:hover {
+    color:chocolate;
+    background-color: white;
+}
+.btn-secondary {
+    color: white;
+    background-color: teal;
+    border: 1px solid teal;
+}
+.btn-secondary:hover {
+    color: teal;
+    background-color: white;
+}
+
+/* linkler  default*/
+body  a{
+    color:white;
+    text-decoration: none;
+}   
+
+.container {
+    max-width:1100px;
+
+}
+
+.textbox {
+    border: 1px solid #2e5a79;
+    border-radius: 4px;
+    margin: 1rem;
+    width: 35vw;
+    height: 2rem;
+}
+.button_select {
+    background-color: #2f3033;
+    color: white;
+    border: 1px solid #2e5a79;
+    border-radius: 4px;
+    margin: 1rem;
+    padding: 0.75rem 1.25rem;
+    width:15rem;
+}
+    .button_select:hover {
+        box-shadow: 0 0 20px 10px hsla(204, 70%, 53%, 0.5);
+    }
+
+  

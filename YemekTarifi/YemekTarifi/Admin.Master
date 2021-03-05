@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="YemekTarifi.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="Kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 700px;
+            height: 20px;
+        }
+        .auto-style2 {
+            float: left;
+            width: 233px;
+            height: auto;
+        }
+        .auto-style3 {
+            width: 100%;
+            
+        }
+        .auto-style4 {
+            font-weight: normal;
+            font-size: xx-large;
+            color: #000000;
+        }
+        .auto-style6 {
+            font-size: xx-large;
+        }
+        .auto-style7 {
+            color: #009900;
+        }
+        .auto-style8 {
+            font-size: xx-large;
+            color: #009900;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 150px; width: 700px; margin-left: 300px; background-color: #0f4a82;">
+            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/resim/banner/login-banner.jpg" Width="700px" />
+        </div>
+        <div style="margin-left: 300px; " class="auto-style1"></div>
+        
+        <div style="margin-left: 300px; width: 700px; height: 400px;">
+            <div style="background-color: #0f4a82;" class="auto-style2">
+                
+                    <table class="auto-style3">
+                        <tr>
+                            <td class="auto-style4">Menüler</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #FFFFFF" class="auto-style8"><a href="Kategoriler.aspx" class="auto-style6"><strong><span class="auto-style7">Kategoriler</span></strong></a></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #FFFFFF" class="auto-style8"><a href="Yemekler.aspx" class="auto-style6"><strong><span class="auto-style7">Yemekler</span></strong></a></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #FFFFFF" class="auto-style8"><a href="Yorumlar.aspx" class="auto-style6"><strong><span class="auto-style7">Yorumlar</span></strong></a></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #FFFFFF" class="auto-style8"><a href="Mesajlar.aspx" class="auto-style6"><strong><span class="auto-style7">Mesajlar</span></strong></a></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #FFFFFF" class="auto-style8"><a href="GununYemegiAdmin.aspx" class="auto-style6"><strong><span class="auto-style7">Günün Yemeği</span></strong></a></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #FFFFFF" class="auto-style8"><a href="Tarifler.aspx" class="auto-style6"><strong><span class="auto-style7">Öneriler</span></strong></a></td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin solid #FFFFFF" class="auto-style8"><a href="HakkimizdaAdmin.aspx" class="auto-style6"><strong><span class="auto-style7">Hakkımızda</span></strong></a></td>
+                        </tr>
+                    </table>
+&nbsp;
+                
+            </div>
+            <div style="margin-left: 250px; width: 450px; height: auto; background-color: #0f4a82;">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
